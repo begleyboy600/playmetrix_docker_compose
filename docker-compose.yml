@@ -4,11 +4,11 @@ services:
   backend:
     image: 167807621628.dkr.ecr.eu-west-1.amazonaws.com/playmetrix:backend-latest
     ports:
-      - "80:8000"
+      - "80:80"
     environment:
       - VARIABLE_NAME=value
 
-  frontend:
-    image: 167807621628.dkr.ecr.eu-west-1.amazonaws.com/playmetrix:frontend-latest
-    ports:
-      - "80:80"
+  # frontend:
+  #   image: 167807621628.dkr.ecr.eu-west-1.amazonaws.com/playmetrix:frontend-latest
+  #   ports:
+  #     - "80:80"
