@@ -18,7 +18,7 @@ services:
     logging:
       driver: awslogs
       options:
-        awslogs-group: "backend-logs"
+        awslogs-group: "frontend-logs"
         awslogs-region: "eu-west-1"
 
   nginx:
@@ -35,7 +35,7 @@ services:
     logging:
       driver: awslogs
       options:
-        awslogs-group: "backend-logs"
+        awslogs-group: "nginx-logs"
         awslogs-region: "eu-west-1"
 
 networks:
